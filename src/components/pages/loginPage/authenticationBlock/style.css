@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.authentication {
+    max-width: 285px;
+    margin: 0 auto;
+}
+
+.authentication div {
+    width: 258px;
+    margin: 100px auto 0px;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    font-family: 'Montserrat', SemiBold, serif;
+    margin-top: 24px;
+}
+
+form {
+    margin-top: 64px;
+    display: grid;
+    margin-bottom: 150px;
+}
+
+label {
+    display: grid;
+    font-size: 18px;
+    line-height: 22px;
+    color: #818181;
+    font-family: 'Montserrat', Bold, serif;
+}
+
+.authentication_password {
+    margin-top: 24px;
+}
+
+input {
+    margin-top: 16px;
+    border: none;
+    border-bottom: 1px solid rgba(129, 129, 129, 0.5);
+    padding-bottom: 10px;
+    color: rgba(129, 129, 129, 0.8);
+    outline: none;
+}
+
+form button {
+    margin-top: 40px;
+    border-radius: 30px;
+    background: #38A6FF;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+    border: none;
+    font-family: 'Montserrat', SemiBold, serif;
+}
+
+form button:hover {
+    background: #115D8C ;
+}
+
+input:focus {
+    border-bottom: 1px solid #D99230;
+}
+
+
