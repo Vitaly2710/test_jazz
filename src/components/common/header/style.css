@@ -1,0 +1,39 @@
+.header_container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header_container_wrapper {
+ display: grid;
+    grid-template-columns: 60px 225px;
+    justify-content: space-between;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    padding: 4px 32px 4px 40px  ;
+}
+
+.logo img {
+    width: 56px;
+    height: 56px;
+}
+
+.infoAndProfile {
+    padding-top: 16px;
+}
+
+.infoAndProfile button {
+    background: #38A6FF;
+    border-radius: 30px;
+    padding: 8px 25px 8px 25px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.infoAndProfile button:last-child {
+    margin-right: 6px;
+}
+
+
+
+
+
