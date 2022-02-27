@@ -1,23 +1,22 @@
 import React, { useState } from 'react'
 import logo from '../../../../assets/header/Logo.png'
 import './style.css'
-import { useDispatch, useSelector } from 'react-redux'
-import { correctUser } from '../../../../reduxToolkit/slice'
+// import { Redirect } from 'react-router-dom'
 
 export const AuthenticationBlock = () => {
   const [login, setLogin] = useState('')
   const [password, setPassword] = useState('')
-  const loginUser = useSelector((state) => state?.counter.username)
-  const passwordUser = useSelector((state) => state?.counter.password)
-  const dispatch = useDispatch()
+  const loginUser = sessionStorage.getItem('login')
+  const passwordUser = sessionStorage.getItem('password')
+  console.log(loginUser, passwordUser)
+
   function check () {
     if (login === loginUser && password === passwordUser) {
-      dispatch(correctUser())
+      sessionStorage.setItem('state', 'true')
+      // return (<Redirect to={'/profile'}/>)
     } else {
       alert('неверное имя пользователя или пароль')
     }
-    setPassword('')
-    setLogin('')
   }
   return (
         <section className='authentication'>
@@ -34,7 +33,7 @@ export const AuthenticationBlock = () => {
                   Пароль
                   <input placeholder='введите ваш пароль' value={password} type='password' onChange={(e) => setPassword(e.target.value)}/>
               </label>
-              <button onClick={check}>Войти</button>
+                  <button onClick={check}>Войти</button>
           </form>
         </section>
   )

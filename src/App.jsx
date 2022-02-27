@@ -8,13 +8,17 @@ import {
 } from 'react-router-dom'
 import Redirect from 'react-router-dom/es/Redirect'
 import LoginPage from './components/pages/loginPage/loginPage'
-import { useSelector } from 'react-redux'
 import ProfilePage from './components/pages/profilePage/profilePage'
 import InformationPage from './components/pages/informationPage/infomationPage'
 import MainPage from './components/pages/main/mainPage'
+import CalendarPage from './components/pages/calendarPage/calendarPage'
 
 export default function App () {
-  const loggedIn = useSelector((state) => state?.counter.value)
+  sessionStorage.setItem('password', '123456789')
+  sessionStorage.setItem('login', 'Admin')
+  sessionStorage.setItem('userName', 'John')
+
+  const loggedIn = sessionStorage.getItem('state')
   console.log(loggedIn)
   return (
       <Router>
@@ -33,6 +37,9 @@ export default function App () {
               <li>
                 <Link to="/info">Информация</Link>
               </li>
+              <li>
+                <Link to="/calendar">Календарь</Link>
+              </li>
             </ul>
           </nav>
           <Switch >
@@ -44,6 +51,9 @@ export default function App () {
             </Route>
             <Route path="/info">
               <InformationPage/>
+            </Route>
+            <Route path="/calendar">
+              {loggedIn ? <CalendarPage/> : <Redirect to ="/login"/> }
             </Route>
             <Route path="/">
               <MainPage/>

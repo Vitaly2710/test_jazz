@@ -2,11 +2,10 @@ import React from 'react'
 import './style.css'
 import logo from '../../../assets/header/Logo.png'
 import { Link } from 'react-router-dom'
-import { useSelector } from 'react-redux'
 
 const Header = () => {
-  const user = useSelector((state) => state?.counter.value)
-  const userName = useSelector((state) => state?.counter.username)
+  const user = sessionStorage.getItem('state')
+  const userName = sessionStorage.getItem('userName')
 
   function User () {
     if (user === '') {
