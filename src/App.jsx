@@ -6,12 +6,12 @@ import {
   Link,
   Switch
 } from 'react-router-dom'
-import Header from './components/common/header/header'
 import Redirect from 'react-router-dom/es/Redirect'
 import LoginPage from './components/pages/loginPage/loginPage'
 import { useSelector } from 'react-redux'
 import ProfilePage from './components/pages/profilePage/profilePage'
 import InformationPage from './components/pages/informationPage/infomationPage'
+import MainPage from './components/pages/main/mainPage'
 
 export default function App () {
   const loggedIn = useSelector((state) => state?.counter.value)
@@ -46,7 +46,7 @@ export default function App () {
               <InformationPage/>
             </Route>
             <Route path="/">
-              <Header/>
+              <MainPage/>
             </Route>
           </Switch >
         </div>

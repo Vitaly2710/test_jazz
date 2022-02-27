@@ -32,7 +32,7 @@ export const AuthenticationBlock = () => {
               </label>
               <label className='authentication_password'>
                   Пароль
-                  <input placeholder='введите ваш пароль' value={password} onChange={(e) => setPassword(e.target.value)}/>
+                  <input placeholder='введите ваш пароль' value={password} type='password' onChange={(e) => setPassword(e.target.value)}/>
               </label>
               <button onClick={check}>Войти</button>
           </form>

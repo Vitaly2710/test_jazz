@@ -1,0 +1,49 @@
+.welcomeBlock {
+    display: grid;
+    grid-template-columns: 500px;
+    justify-content: right;
+}
+
+.welcomeBlock h1 {
+    margin-top: 80px;
+    font-family: 'Montserrat', Bold, serif;
+    font-size: 55px;
+    text-align: center;
+}
+
+.welcomeBlock p {
+    font-family: 'Montserrat', SemiBold, serif;
+    font-size: 20px;
+    margin-top: 40px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.welcomeBlock div:first-child {
+    margin-top: 60px;
+    margin-bottom: 220px;
+}
+
+.welcomeBlock_button {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    max-width: 200px;
+    border: none;
+    background-color: #38A6FF;
+    padding: 8px 40px 8px 40px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Montserrat', SemiBold, serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.welcomeBlock_button:hover {
+    background-color: #115D8C;
+}
+

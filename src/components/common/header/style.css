@@ -40,6 +40,10 @@
     font-size: 14px;
 }
 
+.infoAndProfile button:hover {
+    background-color: #115D8C;
+}
+
 .infoAndProfile button:last-child {
     margin-right: 6px;
 }
@@ -48,9 +52,13 @@
     background-color: #ffae00;
     padding: 8px 25px 8px 25px;
     border-radius: 30px;
-    border-bottom:1px dotted;
+    border-bottom:1px solid;
     text-decoration: none;
     color: white;
+}
+
+.infoAndProfile a {
+    text-decoration: none;
 }
 
 
