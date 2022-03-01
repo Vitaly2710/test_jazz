@@ -1,0 +1,23 @@
+.pic_container {
+    display: grid;
+    grid-template-columns: 568px;
+    grid-gap: 20px;
+}
+
+.mainPic {
+    background-size: cover;
+    background-image: url("https://thumb.tildacdn.com/tild6466-3335-4062-b436-363137343837/-/resize/600x600/-/format/webp/DW1A0980_result.jpg");
+    width: 568px;
+    height: 568px;
+    background-position: center;
+}
+
+.pic_container div:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pic_container div:last-child img {
+    width: 300px;
+    height: 272px;
+}

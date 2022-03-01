@@ -1,0 +1,75 @@
+.infoUser_block {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #bcd7fd;
+    padding-bottom: 40px;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+.infoUser_block div {
+    max-width: 200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.infoUser_block .infoUser_block_photo {
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.infoUser_block_photo img {
+    width: 200px;
+    height: 200px;
+}
+
+.infoUser_block_name {
+    font-size: 25px;
+    font-family: 'Montserrat', SemiBold, serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.infoUser_block h4 {
+    font-size: 20px;
+    font-family: 'Montserrat', SemiBold, serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.infoUser_block ol {
+    max-width: 270px;
+    margin: 0 auto;
+}
+
+.infoUser_block span {
+    font-family: 'Montserrat', Bold, serif;
+    font-size: 15px;
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+.infoUser_block p {
+    font-family: 'Montserrat', SemiBold, serif;
+    font-size: 13px;
+}
+
+.infoUser_block .redirectToCalendar {
+    max-width: 125px;
+}
+
+.infoUser_block button {
+    background-color: #38A6FF;
+    padding: 14px 10px 14px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-family: 'Montserrat', SemiBold, serif;
+    font-size: 10px;
+}
+

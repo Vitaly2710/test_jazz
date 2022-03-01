@@ -1,0 +1,43 @@
+.mainPicBlock {
+    max-width: 800px;
+    position: relative;
+}
+
+.mainPicBlock img {
+    width: 500px;
+    position: absolute;
+    height: 700px;
+    border-radius: 10px;
+}
+
+.mainPicBlock img:last-child {
+    animation: changeOne 15s infinite;
+}
+
+.mainPicBlock img:first-child {
+    animation: changeTwo 15s infinite;
+}
+
+@keyframes changeOne {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes changeTwo {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
