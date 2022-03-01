@@ -19,7 +19,6 @@ function FullCalendarApp () {
   const handleModalOpen = () => {
     setShow('1')
   }
-  console.log(show)
   return (
         <div className="App_calendar">
             <button onClick={handleModalOpen}>Добавить</button>

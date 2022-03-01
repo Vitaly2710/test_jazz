@@ -19,7 +19,6 @@ export default function App () {
   sessionStorage.setItem('userName', 'John')
 
   const loggedIn = sessionStorage.getItem('state')
-  console.log(loggedIn)
   return (
       <Router>
         <div>

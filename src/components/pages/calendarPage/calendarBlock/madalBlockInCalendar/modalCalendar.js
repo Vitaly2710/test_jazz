@@ -8,7 +8,6 @@ const ModalCalendar = (name) => {
   const [start, setStart] = useState()
   const [end, setEnd] = useState()
   const dispatch = useDispatch()
-  console.log(start, end, value)
 
   function addEvent () {
     dispatch(addedEvent({
