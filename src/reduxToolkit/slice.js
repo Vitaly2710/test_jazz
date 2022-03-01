@@ -5,30 +5,27 @@ const initialState = {
   state: 'complete' | 'waiting' | 'rejected',
   username: 'Admin',
   password: '123456789',
+  counter: 4,
   events: [
     {
       id: 1,
-      title: 'event 1',
-      start: '2021-06-14T10:00:00',
-      end: '2021-06-14T12:00:00'
-    },
-    {
-      id: 2,
-      title: 'event 2',
-      start: '2021-06-16T13:00:00',
-      end: '2021-06-16T18:00:00'
-
+      title: 'Встреча в 12 часов',
+      start: '2021-06-14',
+      end: '2021-06-14'
     },
     {
       id: 3,
-      title: 'event 3',
+      title: 'Переговоры по изменению плана',
       start: '2022-02-17',
-      end: '2022-02-17',
-      extendedProps: {
-        department: 'BioChemistry'
-      },
-      description: 'Lecture'
+      end: '2022-02-17'
+    },
+    {
+      id: 2,
+      title: 'event',
+      start: '2022-02-17',
+      end: '2022-02-17'
     }
+
   ]
 }
 
@@ -40,8 +37,8 @@ const userSlice = createSlice({
       state.value = 'Admin'
       state.state = 'complete'
     },
-    decrement: (state) => {
-      state.value -= 1
+    addedEvent: (state, action) => {
+      state.events = [...state.events, action.payload]
     },
 
     incrementByAmount: (state, action) => {
@@ -50,6 +47,6 @@ const userSlice = createSlice({
   }
 })
 
-export const { correctUser, decrement, incrementByAmount } = userSlice.actions
+export const { correctUser, addedEvent, incrementByAmount } = userSlice.actions
 
 export default userSlice.reducer
